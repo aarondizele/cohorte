@@ -2,8 +2,7 @@
   <div class="bg-white">
     <div class="_flex _between pt-5 px-10">
       <div class="font-weight-bold _flex">
-        <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt width="65" />
-        <img src="../assets/BankersLogoFondBlanc_modifié.webp" alt />
+        COHORTE
       </div>
       <div class="_flex">
         <button class="_button _button-outline body-2 font-weight-bold">Devenir membre</button>
@@ -33,16 +32,16 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-8">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item mr-15-lg mr-10-md active">
+          <li class="nav-item mr-10-md active">
             <a class="nav-link" href="#">
               Accueil
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <!-- <li class="nav-item mr-15-lg mr-10-md">
+          <!-- <li class="nav-item mr-10-md">
             <a class="nav-link" href="#">Qui sommes-nous?</a>
           </li> -->
-          <li class="nav-item mr-15-lg mr-10-md dropdown">
+          <li class="nav-item mr-10-md dropdown">
             <a
               class="nav-link dropdown-toggle"
               id="navbarDropdownMenuLink"
@@ -51,51 +50,126 @@
               aria-expanded="false"
             >Qui sommes-nous?</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Idéologie</a>
-              <a class="dropdown-item" href="#">Statut</a>
-              <a class="dropdown-item" href="#">Valeur</a>
+              <li><a class="dropdown-item" href="#">Idéologie</a></li>
+              <li><a class="dropdown-item" href="#">Statut</a></li>
+              <li><a class="dropdown-item" href="#">Valeur</a></li>
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#">Organisation</a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Submenu action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another submenu action</a>
-                  </li>
                   <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                    <a class="dropdown-item dropdown-toggle" href="#">Comité de direction</a>
                     <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item">Action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item">Something else here</a>
-                      </li>
+                      <li><a class="dropdown-item">Président</a></li>
+                      <li><a class="dropdown-item">Membres du comité</a></li>
                     </ul>
                   </li>
                   <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                    <a class="dropdown-item dropdown-toggle" href="#">Comité des sages</a>
                     <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">Subsubmenu action</a>
+                      <li><a class="dropdown-item">Définition suscinte des rôles membres</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Commissaires aux comptes</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Définition suscinte des rôles membres</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li>
+                    <a class="dropdown-item" href="#">Another submenu action</a>
+                  </li> -->
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Histoire</a></li>
+              <li><a class="dropdown-item" href="#">Partenaire</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mr-10-md dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Membres</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Domaines</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Publiques</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Régies financières</a></li>
+                      <li><a class="dropdown-item">Ministères</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Privées</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item">Communication</a></li>
+                      <li><a class="dropdown-item">Transports</a></li>
+                      <li><a class="dropdown-item">Construction</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Industries</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item">Mécanique</a></li>
+                          <li><a class="dropdown-item">Métallurgie</a></li>
+                          <li><a class="dropdown-item">Vestimentaires</a></li>
+                        </ul>
                       </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another subsubmenu action</a>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Finances</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item">Banques</a></li>
+                          <li><a class="dropdown-item">Microfinances</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item">Santé</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Conseil</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item">Fiscal</a></li>
+                          <li><a class="dropdown-item">Audit</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item">Médias</a></li>
+                      <li><a class="dropdown-item">Musique</a></li>
+                      <li><a class="dropdown-item">Défense</a></li>
+                      <li><a class="dropdown-item">Alimentaire</a></li>
+                      <li><a class="dropdown-item">Energie</a></li>
+                      <li><a class="dropdown-item">Commerce</a></li>
+                      <li><a class="dropdown-item">Télécommunication</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Informatique</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item">Cyber Café</a></li>
+                          <li><a class="dropdown-item">Fourniture de progiciel</a></li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
+              <!--  -->
+              <li><a class="dropdown-item" href="#">Publication des membres</a></li>
             </ul>
           </li>
-          <li class="nav-item mr-15-lg mr-10-md">
-            <a class="nav-link" href="#">Publications</a>
+         <li class="nav-item mr-10-md dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Actualités</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Economique</a></li>
+              <li><a class="dropdown-item" href="#">Social</a></li>
+              <li><a class="dropdown-item" href="#">Politique</a></li>
+              <li><a class="dropdown-item" href="#">Mondial</a></li>
+            </ul>
           </li>
-          <li class="nav-item mr-15-lg mr-10-md">
+          <li class="nav-item mr-10-md">
             <a class="nav-link" href="#">Nous contacter</a>
           </li>
         </ul>

@@ -1,13 +1,43 @@
 <template>
   <div class="home">
     <!--  -->
-    <div class="container pt-5 pb-10">
+    <!-- Automatic Slideshow Images -->
+    <div>
+      <div class="mySlides pos-relative text-center">
+        <img
+          src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/71391853_128335575231174_8851014066102075392_o.jpg?_nc_cat=104&_nc_oc=AQnAinIKF2FUYV4nDz6Efk201K8phKe4EJtZ7SyPFmZtWv1hYUQdeKYO6gCP8hHDkPw&_nc_ht=scontent-ams4-1.xx&oh=d11532e931868f21371a97d33dc16c05&oe=5E2A4DCB"
+          class="_cover"
+        />
+        <div class="pos-absolute pos-bottom-center text-white py-20">
+          <!-- <h1 class="font-weight-bold">"It's about inspiring and empowering others"</h1> -->
+        </div>
+      </div>
+      <!-- <div class="mySlides pos-relative text-center">
+        <img src="https://www.w3schools.com/w3images/ny.jpg" class="_cover" />
+        <div class="pos-absolute pos-bottom-center text-white py-20">
+          <h3>New York</h3>
+          <p>
+            <b>The atmosphere in New York is lorem ipsum.</b>
+          </p>
+        </div>
+      </div>
+      <div class="mySlides pos-relative text-center">
+        <img src="https://www.w3schools.com/w3images/chicago.jpg" class="_cover" />
+        <div class="pos-absolute pos-bottom-center text-white py-20">
+          <h3>Chicago</h3>
+          <p>
+            <b>Thank you, Chicago - A night we won't forget.</b>
+          </p>
+        </div>
+      </div> -->
+    </div>
+    <!--  -->
+    <div class="container py-15">
       <div class="row no-gutters" style="background-color:#E2F0D5;">
         <div class="col-12 col-md-8 col-lg-6 p-20">
-          <h1 class="display-4 font-weight-medium">COHORTE</h1>
-          <p
-            class="py-10"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nihil cumque commodi facere dignissimos.</p>
+          <h1 class="display-4 font-weight-medium">Espace rangé. <br>
+          Esprit reposé.</h1> 
+          <p class="py-10">Comment organiser votre espace peut changer votre vie.</p>
           <div class="_flex">
             <button class="_button _button-outline body-2 font-weight-bold">En savoir plus</button>
             <button class="_button _button-outline body-2 font-weight-bold border-left-0">
@@ -34,41 +64,23 @@
           </div>
         </div>
         <div class="col-12 col-md-4 col-lg-6">
-          <img
-            src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/71391853_128335575231174_8851014066102075392_o.jpg?_nc_cat=104&_nc_oc=AQnAinIKF2FUYV4nDz6Efk201K8phKe4EJtZ7SyPFmZtWv1hYUQdeKYO6gCP8hHDkPw&_nc_ht=scontent-ams4-1.xx&oh=d11532e931868f21371a97d33dc16c05&oe=5E2A4DCB"
-            class="_cover"
-            alt
-          />
+          <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/71391853_128335575231174_8851014066102075392_o.jpg?_nc_cat=104&_nc_oc=AQnAinIKF2FUYV4nDz6Efk201K8phKe4EJtZ7SyPFmZtWv1hYUQdeKYO6gCP8hHDkPw&_nc_ht=scontent-ams4-1.xx&oh=d11532e931868f21371a97d33dc16c05&oe=5E2A4DCB" class="_cover" alt="">
         </div>
       </div>
     </div>
-    <!-- Qui sommes-nous -->
-    <div class="_header2 py-10">
+    <!--  -->
+    <div class="_header2">
       <div class="row no-gutters">
         <div class="col-12 col-md-6 _header2-left position-relative">
           <div class="_header2-box"></div>
           <img src="../assets/track.svg" alt class="_header2-svg" />
         </div>
         <div class="col-12 col-md-6 col-lg-4 offset-lg-1 py-20">
-          <h2 class="font-weight-bold">Qui sommes-nous?</h2>
+          <h2 class="font-weight-bold">À propos de nous</h2>
           <div class="_separator-sm _separator-lg"></div>
           <p
             class="my-10"
           >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio tempora temporibus obcaecati vitae saepe architecto quidem doloremque, numquam, repudiandae nisi aliquam error? Rem sapiente fugit voluptates dolore? Dolores, temporibus!</p>
-          <div class="row my-5">
-            <div class="col-4">
-              <h1 class="display-4 mb-0 font-weight-bold">2019</h1>
-              <div class="body-1">Notre année de création</div>
-            </div>
-            <div class="col-4">
-              <h1 class="display-4 mb-0 font-weight-bold">500</h1>
-              <div class="body-1">Membres attendus</div>
-            </div>
-            <div class="col-4">
-              <h1 class="display-4 mb-0 font-weight-bold">20+</h1>
-              <div class="body-1">Activités annuelles</div>
-            </div>
-          </div>
           <div class="_flex">
             <button class="_button _button-outline body-2 font-weight-bold">En savoir plus</button>
             <button class="_button _button-outline body-2 font-weight-bold border-left-0">
@@ -96,8 +108,114 @@
         </div>
       </div>
     </div>
-    <!-- Nos activites -->
-    <div class="_header1 py-10">
+    <!--  -->
+    <div class="_header1">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-9">
+          <div class="_header1-content pb-20 px-20">
+            <div class="row">
+              <div class="col-12 col-md-10 col-lg-8">
+                <h1 class="font-weight-bold">The Bankers' Club</h1>
+                <p
+                  class="py-10"
+                >Créé en 2019 en République Démocratique du Congo, the Bankers se veut être un club réunissant des professionnels du secteur de la banque, de la finance, de l’assurance et de métiers similaires sous la forme d’une ASBL excluant toute tendance à un caractère politique et religieux.</p>
+                <div class="row mt-10">
+                  <div class="col-4">
+                    <h1 class="display-4 mb-0 font-weight-bold">2019</h1>
+                    <div class="body-1">Notre année de création</div>
+                  </div>
+                  <div class="col-4">
+                    <h1 class="display-4 mb-0 font-weight-bold">500</h1>
+                    <div class="body-1">Membres attendus</div>
+                  </div>
+                  <div class="col-4">
+                    <h1 class="display-4 mb-0 font-weight-bold">20+</h1>
+                    <div class="body-1">Activités annuelles</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="_button-group">
+              <button class="_button-plus _button-plus-lg">En savoir plus</button>
+              <button class="_button-plus _button-plus-sm">
+                <svg
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="42 13.5 116 173"
+                  viewBox="42 13.5 116 173"
+                  height="20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  datatype="color"
+                  role="img"
+                  style="transform: rotate(-90deg);"
+                >
+                  <g>
+                    <path
+                      fill="#ffffff"
+                      d="M147.2 125.1l-40.9 33.8V13.5H90.1v145.4l-38.4-33.8-9.7 12 58.4 49.4 57.6-49.4-10.8-12z"
+                      data-color="1"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 __righter">
+          <div class="_header1-image">
+            <img src="https://www.amanimedia.cd/wp-content/uploads/2017/07/FAzfbSzs.jpg" alt />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Sectors -->
+    <div class="_sectors py-20" style="background-color:#E1E8F2">
+      <div class="container">
+        <h1 class="font-weight-bold mb-5">Secteurs ciblés</h1>
+        <div class="row">
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            v-for="(sector, i) in [{name: 'Banque', image: 'https://media-exp1.licdn.com/media-proxy/ext?w=648&h=348&f=n&hash=BWCJxnd4Bwdo0JhZjikw2OJAG1E%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R64lhwXxxgo4eCCogGl7wgVFdOKTTGgRCSi5ZbEPzf0LZiCIOz-8R4LO2he0BpoP7g'}, {name: 'Assurance', image: 'https://media-exp1.licdn.com/media-proxy/ext?w=850&h=380&f=n&hash=n6cWF99CzwurLLpPhx9KZS4zZsM%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R69hAxU1hQk4aqXpFy19glESo-SA3W-Anj7rYDDfwm8PoSwOvb-5gRDOzNmxUd2P777L2y-Rcyiccq4'}, {name: 'Finance', image: 'https://media-exp1.licdn.com/media-proxy/ext?w=1000&h=562&f=n&hash=WnFBfvpV7sHJug5tpkATFZxRXiY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R653QITzxtv46GM4lqlq0ZXTM3OB3O-Wjuo5bbcCSCyKp--I839oQdWGGZVz0FzLai1XX6TDcLIK4uRJ6V2393lbO2QRxApOjIitV1qu-gDGw4lgqX_ANPCaBcc2rlaP3vwfLH9c0IsUGo6-OiALMnCLFMXyhiPQtWuHMIIeZUt9o5VzxBWqIPQH4U9nN5okD4-zAm-_-_5M21f78TyWBm_U1UxWzbEPqQR6w'}]"
+            :key="i"
+          >
+            <div class="card __card-sector" :style="`background-image:url('${sector.image}')`">
+              <div class="__card-sector-feature font-weight-bold">{{sector.name}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="_sectors py-10" style="background-color:#E1E8F2">
+      <div class="px-20">
+        <h1 class="font-weight-bold mb-5 px-20">Nos prochains événements</h1>
+      </div>
+      <div class="row px-20 pt-12 pb-20 _bg-dark pos-relative">
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          v-for="(sector, i) in ['Banque', 'Assurance', 'Finance', 'Mines']"
+          :key="i"
+        >
+          <div
+            class="card __card-sector __card-post"
+            style="background-image:url('https://www.amanimedia.cd/wp-content/uploads/2017/08/df7748a73921b2837e36d05e82956929fb51f162.jpg"
+          >
+            <div class="__card-content">
+              <router-link to="/">
+                <h6 class="font-weight-bold">Lutte contre la famine</h6>
+              </router-link>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom -->
+        <div class="pos-absolute pos-bottom-center">
+          <button class="_button-plus _button-plus-lg border-0 py-3">S'inscrire à une activité</button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="_header1">
       <div class="row no-gutters">
         <div class="col-12 col-md-3 __lefter">
           <div class="_header1-image">
@@ -332,82 +450,13 @@
         </div>
       </div>
     </div>
-    <!-- Nos prochains evenements -->
-    <div class="_sectors py-15" style="background-color:#E1E8F2">
-      <div class="px-20">
-        <h1 class="font-weight-bold mb-5 px-20">Nos prochains événements</h1>
-      </div>
-      <div class="row px-20 pt-12 pb-20 _bg-dark pos-relative">
-        <div
-          class="col-12 col-md-6 col-lg-3"
-          v-for="(sector, i) in ['Banque', 'Assurance', 'Finance', 'Mines']"
-          :key="i"
-        >
-          <div
-            class="card __card-sector __card-post"
-            style="background-image:url('https://www.amanimedia.cd/wp-content/uploads/2017/08/df7748a73921b2837e36d05e82956929fb51f162.jpg"
-          >
-            <div class="__card-content">
-              <router-link to="/">
-                <h6 class="font-weight-bold">Lutte contre la famine</h6>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <!-- Bottom -->
-        <div class="pos-absolute pos-bottom-center">
-          <button class="_button-plus _button-plus-lg border-0 py-3">S'inscrire à une activité</button>
-        </div>
-      </div>
-    </div>
-    <!-- Publications -->
-    <div class="_publications py-10" style="background-color:#FCF3BA">
-      <div class="container">
-        <div class="_flex _between">
-          <h2 class="font-weight-bold my-5">Actualités</h2>
-          <button class="_button _button-outline body-2 font-weight-bold">Toutes les actualités</button>
-        </div>
-        <div class="row my-5">
-          <div
-            class="col-12 col-md-6 col-lg-3"
-            v-for="(team, i) in ['Aaron Dizele', 'Adina Dizele', 'Didier Numb', 'Thierry']"
-            :key="i"
-          >
-            <div
-              class="card __card-sector __card-post"
-              style="background-image:url('https://www.amanimedia.cd/wp-content/uploads/2017/08/df7748a73921b2837e36d05e82956929fb51f162.jpg"
-            >
-              <div class="__card-header">
-                <div class="_flex _between tiny">
-                  <div class="_flex">
-                    <!-- <div class="_avatar"></div> -->
-                    <div>
-                      <div class="mb-0">Aaron Dizele</div>
-                      <div>mai 26 • 1 min</div>
-                    </div>
-                  </div>
-                  <!-- <div>3 vues</div> -->
-                </div>
-              </div>
-              <div class="__card-content">
-                <router-link to="/">
-                  <h6
-                    class="font-weight-bold"
-                  >SPORT : Avec Neymar et Mbappé, le PSG réalise le deal du siècle</h6>
-                </router-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!--  -->
     <div class="container">
       <!-- Teams -->
       <div class="_teams py-10">
-        <div class="d-flex flex-column my-5">
-          <h1 class="font-weight-bold">L'équipe</h1>
-          <!-- <div class="_separator-sm _separator-xs"></div> -->
+        <div class="d-flex flex-column align-items-center my-5">
+          <h2 class="font-weight-bold">L'équipe</h2>
+          <div class="_separator-sm _separator-xs"></div>
         </div>
         <div class="row">
           <div
@@ -427,7 +476,114 @@
         </div>
       </div>
     </div>
-    <!-- Newsletter -->
+    <!-- Publications -->
+    <div class="_publications py-10" style="background-color:#FCF3BA">
+      <div class="container">
+        <div class="_flex _between">
+          <h2 class="font-weight-bold my-5">Nos publications</h2>
+          <button class="_button _button-outline body-2 font-weight-bold">Toutes les publications</button>
+        </div>
+        <div class="row my-5">
+          <div
+            class="col-12 col-md-6 col-lg-3"
+            v-for="(team, i) in ['Aaron Dizele', 'Adina Dizele', 'Didier Numb', 'Thierry']"
+            :key="i"
+          >
+            <div
+              class="card __card-sector __card-post"
+              style="background-image:url('https://www.amanimedia.cd/wp-content/uploads/2017/08/df7748a73921b2837e36d05e82956929fb51f162.jpg"
+            >
+              <div class="__card-header">
+                <div class="_flex _between tiny">
+                  <div class="_flex">
+                    <div class="_avatar"></div>
+                    <div>
+                      <div class="mb-0">Aaron Dizele</div>
+                      <div>mai 26 • 1 min</div>
+                    </div>
+                  </div>
+                  <div>3 vues</div>
+                </div>
+              </div>
+              <div class="__card-content">
+                <router-link to="/">
+                  <h6
+                    class="font-weight-bold"
+                  >SPORT : Avec Neymar et Mbappé, le PSG réalise le deal du siècle</h6>
+                </router-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cabinet -->
+    <div class="_cabinet py-20">
+      <div class="container">
+        <div class="row n0-gutters">
+          <div class="col-12 col-md-6 col-lg-7 p-0">
+            <div class="_cabinet-image"></div>
+            <div class="py-8 w-75">
+              <h3 class="font-weight-bold">Le cabinet</h3>
+              <div class="_separator-sm"></div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis voluptatibus aliquid a fugiat inventore.</p>
+              <div class="_flex">
+                <button class="_button _button-outline body-2 font-weight-bold">En savoir plus</button>
+                <button class="_button _button-outline body-2 font-weight-bold border-left-0">
+                  <svg
+                    preserveAspectRatio="xMidYMid meet"
+                    data-bbox="42 13.5 116 173"
+                    viewBox="42 13.5 116 173"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    datatype="color"
+                    role="img"
+                    style="transform: rotate(-90deg);"
+                  >
+                    <g>
+                      <path
+                        fill="#212121"
+                        d="M147.2 125.1l-40.9 33.8V13.5H90.1v145.4l-38.4-33.8-9.7 12 58.4 49.4 57.6-49.4-10.8-12z"
+                        data-color="1"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 _cabinet-right p-0 pos-relative">
+            <div class="_cabinet-note z-10">
+              <h3 class="font-weight-bold mb-7">Nos expertises</h3>
+              <div class="_flex mb-2">
+                <div></div>
+                <div>
+                  <h6 class="font-weight-bold">Comptabilité</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="_flex mb-2">
+                <div></div>
+                <div>
+                  <h6 class="font-weight-bold">Comptabilité</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="_flex mb-2">
+                <div></div>
+                <div>
+                  <h6 class="font-weight-bold">Comptabilité</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <img src="../assets/track.svg" alt class="_cabinet-right-svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="separator _bg-dark text-white">
       <div class="container py-10">
         <div class="row _flex">
@@ -553,7 +709,7 @@ export default {
   mounted() {
     // this.showSlides(this.slideIndex);
     this.initMap();
-    // this.carousel();
+    this.carousel();
   }
 };
 </script>
