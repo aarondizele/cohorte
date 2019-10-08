@@ -1,0 +1,511 @@
+$primary: #E85F58;
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+._flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+._center {
+    justify-content: center;
+}
+
+._between {
+    justify-content: space-between;
+}
+
+// 
+._bg-primary {
+    background-color: $primary;
+}
+
+._bg-secondary {
+    background-color: beige;
+}
+
+._fg-primary {
+    color: $primary;
+}
+
+// 
+._avatar {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 8px;
+}
+
+.__card-sector {
+    height: 360px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+    // border: .5px solid #f9f9f9;
+    border: 0;
+    border-radius: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.__card-team {
+    height: 280px;
+}
+
+.__card-sector-feature {
+    position: absolute;
+    width: 70%;
+    left: 0;
+    bottom: 0;
+    background: white;
+    background: rgba($color: #ffffff, $alpha: .7);
+    color: #212121;
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.__card-header {
+    padding: 10px 14px;
+    color: white;
+    z-index: 2;
+}
+
+.__card-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 14px;
+    color: white;
+    z-index: 2;
+}
+
+.__card-post {
+    height: 300px;
+    border-radius: 4px;
+}
+
+.__card-post::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: 120px;
+    opacity: 0.6;
+    background: linear-gradient(0deg, #343a5e 10%, rgba(52, 58, 94, 0) 100%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+// 
+._button {
+    background: white;
+    border: none;
+    font-size: 14px;
+    padding: 4px 12px;
+}
+
+._button-outline {
+    border: 2px solid #212121;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Text
+.headline {
+    font-size: 24px!important;
+    font-weight: 400;
+    line-height: 32px!important;
+    letter-spacing: normal!important
+}
+
+.title {
+    font-size: 20px!important;
+    font-weight: 500;
+    line-height: 28px!important;
+    letter-spacing: .02em!important
+}
+
+.subheading {
+    font-size: 16px!important;
+    font-weight: 400
+}
+
+.body-2 {
+    font-weight: 500
+}
+
+.body-1,
+.caption {
+    font-weight: 400
+}
+
+.body-1,
+.body-2 {
+    font-size: 14px!important
+}
+
+.caption {
+    font-size: 12px!important
+}
+
+.no-hover {
+    background: transparent!important;
+    &:hover {
+        background: transparent!important;
+    }
+}
+
+input {
+    margin: 0;
+    padding: 0;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+// Text
+.headline {
+    font-size: 24px!important;
+    font-weight: 400;
+    line-height: 32px!important;
+    letter-spacing: normal!important
+}
+
+.title {
+    font-size: 20px!important;
+    font-weight: 500;
+    line-height: 28px!important;
+    letter-spacing: .02em!important
+}
+
+.subheading {
+    font-size: 16px!important;
+    font-weight: 400
+}
+
+.body-2 {
+    font-weight: 500
+}
+
+.body-1,
+.caption {
+    font-weight: 400
+}
+
+.body-1,
+.body-2 {
+    font-size: 14px!important
+}
+
+.caption {
+    font-size: 12px!important
+}
+
+.tiny {
+    font-size: 10px!important
+}
+
+.no-hover {
+    background: transparent!important;
+    &:hover {
+        background: transparent!important;
+    }
+}
+
+input {
+    margin: 0;
+    padding: 0;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* The progress container (grey background) */
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+
+
+/* The progress bar (scroll indicator) */
+
+.progress-bar {
+    height: 3px;
+    background: rgba($color: #E85F58, $alpha: 1.0);
+    width: 0%;
+}
+
+#navbar {
+    position: fixed;
+    /* Make it stick/fixed */
+    z-index: 999;
+    top: 0;
+    /* Stay on top */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+._cabinet-image {
+    border-radius: 4px;
+    background-color: beige;
+    width: 100%;
+    height: 360px;
+    background-color: beige;
+}
+
+._cabinet-right {
+    margin-left: -120px!important;
+}
+
+._cabinet-note {
+    width: 100%;
+    // border-radius: 25px;
+    margin-top: 125px;
+    background-color: #f9f9f9;
+    min-height: 400px;
+    padding: 32px;
+}
+
+._separator-sm {
+    height: 5px;
+    width: 10%;
+    background-color: #212121;
+    margin-bottom: 16px;
+    border-radius: 1px;
+}
+
+._separator-xs {
+    width: 5%;
+}
+
+._separator-lg {
+    width: 20%;
+}
+
+._top {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #bebebe;
+    color: #212121;
+    border-color: transparent;
+    position: fixed;
+    bottom: 2.3rem;
+    right: 2rem;
+    -webkit-transition: all .11s;
+    transition: all .11s;
+    cursor: pointer;
+    z-index: 9999;
+    padding-top: .325rem;
+    &:hover {
+        background: #212121;
+        color: white;
+    }
+}
+
+._bg-dark {
+    background: rgb(17, 17, 17);
+    background: linear-gradient(160deg, rgba(17, 17, 17, 1) 0%, rgba(51, 51, 51, 1) 47%, rgba(34, 34, 34, 1) 100%);
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.nav-pills .nav-link.active {
+    background: transparent;
+    border-bottom: 4px solid $primary;
+    // font-weight: 600;
+}
+
+._header1-content {
+    background-color: rgb(17, 17, 17);
+    background-color: linear-gradient(160deg, rgba(17, 17, 17, 1) 0%, rgba(51, 51, 51, 1) 47%, rgba(34, 34, 34, 1) 100%);
+    position: relative;
+    color: white;
+    height: 500px;
+    padding-top: 80px;
+}
+
+._header1-image img {
+    width: 500px;
+    height: 384px;
+    object-fit: cover;
+}
+
+.__righter {
+    margin-left: -100px;
+    margin-top: 50px;
+    z-index: 10;
+}
+
+.__lefter {
+    // margin-left: -100px;
+    margin-top: 50px;
+    z-index: 10;
+}
+
+._button-group {
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+._button-group-left {
+    left: -120px;
+}
+
+._button-plus {
+    background: #E85F58;
+    color: white;
+    border: 0;
+    border-right: 1px solid white;
+    font-size: 20px;
+}
+
+._button-plus-lg {
+    padding: 18px 46px;
+}
+
+._button-plus-sm {
+    padding: 18px 24px;
+}
+
+._header1-content svg {
+    fill: #ffffff!important;
+}
+
+._header2-left {
+    background-color: #CBDBC5;
+}
+
+._header2-box {
+    position: absolute;
+    border: 20px solid white;
+    height: 300px;
+    width: 400px;
+    right: -70px;
+    top: 50px;
+    background: rgba($color: #E8E6E6, $alpha: 1.0);
+    z-index: 2;
+}
+
+._header2-svg {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 400px;
+}
+
+._cabinet-right-svg {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 400px;
+    z-index: -1;
+}
+
+
+/* Slideshow container */
+
+._cover {
+    width: 100%;
+    position: relative;
+    height: 500px;
+    object-fit: cover;
+    object-position: top center;
+    // background-position: 100% 100%;
+}
+
+
+/* Fading animation */
+
+._cover {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+._cover2 {
+    height: 400px;
+    width: 100%;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .9
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .9
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border-top: 4px solid #212121;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .9);
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: $primary;
+    font-weight: 500;
+}
