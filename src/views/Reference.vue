@@ -35,9 +35,8 @@
     <div class="container py-15">
       <div class="row no-gutters" style="background-color:#E2F0D5;">
         <div class="col-12 col-md-8 col-lg-6 p-20">
-          <h1 class="display-4 font-weight-medium">Espace rangé. <br>
-          Esprit reposé.</h1> 
-          <p class="py-10">Comment organiser votre espace peut changer votre vie.</p>
+          <h1 class="display-4 font-weight-medium">The Bankers Club</h1> 
+          <p class="py-10">It's about inspiring and empowering others</p>
           <div class="_flex">
             <button class="_button _button-outline body-2 font-weight-bold">En savoir plus</button>
             <button class="_button _button-outline body-2 font-weight-bold border-left-0">

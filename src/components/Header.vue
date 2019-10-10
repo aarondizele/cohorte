@@ -1,10 +1,12 @@
 <template>
   <div class="bg-white">
     <div class="_flex _between pt-5 px-10">
-      <div class="font-weight-bold _flex">
+      <router-link to="/" class="font-weight-bold gd-sage _flex">
         COHORTE
-      </div>
-      <div class="_flex">
+        <!-- <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt="" width="65">
+        <img src="../assets/BankersLogoFondBlanc_modifié.webp" alt=""> -->
+      </router-link>
+      <router-link tag="a" to="/devenez-membre" class="_flex">
         <button class="_button _button-outline body-2 font-weight-bold">Devenir membre</button>
         <button class="_button _button-outline body-2 font-weight-bold border-left-0">
           <svg
@@ -27,7 +29,7 @@
             </g>
           </svg>
         </button>
-      </div>
+      </router-link>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-8">
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -48,7 +50,7 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Qui sommes-nous?</a>
+            >Qui sommes-nous</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Idéologie</a></li>
               <li><a class="dropdown-item" href="#">Statut</a></li>
@@ -75,9 +77,6 @@
                       <li><a class="dropdown-item">Définition suscinte des rôles membres</a></li>
                     </ul>
                   </li>
-                  <!-- <li>
-                    <a class="dropdown-item" href="#">Another submenu action</a>
-                  </li> -->
                 </ul>
               </li>
               <li><a class="dropdown-item" href="#">Histoire</a></li>
@@ -150,11 +149,10 @@
                   </li>
                 </ul>
               </li>
-              <!--  -->
               <li><a class="dropdown-item" href="#">Publication des membres</a></li>
             </ul>
           </li>
-         <li class="nav-item mr-10-md dropdown">
+          <li class="nav-item mr-10-md dropdown">
             <a
               class="nav-link dropdown-toggle"
               id="navbarDropdownMenuLink"
@@ -163,14 +161,20 @@
               aria-expanded="false"
             >Actualités</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Economique</a></li>
-              <li><a class="dropdown-item" href="#">Social</a></li>
-              <li><a class="dropdown-item" href="#">Politique</a></li>
-              <li><a class="dropdown-item" href="#">Mondial</a></li>
+              <li><router-link to="/actualite" class="dropdown-item" href="#">Economique</router-link></li>
+              <li><router-link to="/actualite" class="dropdown-item" href="#">Social</router-link></li>
+              <li><router-link to="/actualite" class="dropdown-item" href="#">Politique</router-link></li>
+              <li><router-link to="/actualite" class="dropdown-item" href="#">Mondial</router-link></li>
             </ul>
           </li>
           <li class="nav-item mr-10-md">
-            <a class="nav-link" href="#">Nous contacter</a>
+            <router-link to="/evenements" class="nav-link">Evénements</router-link>
+          </li>
+          <li class="nav-item mr-10-md">
+            <router-link to="/multimedia" class="nav-link">Multimédia</router-link>
+          </li>
+          <li class="nav-item mr-10-md">
+            <router-link class="nav-link" to="/nous-contacter">Nous contacter</router-link>
           </li>
         </ul>
       </div>

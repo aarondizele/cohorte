@@ -7,7 +7,9 @@
       <Header />
     </div>
     <router-view />
-    <Footer />
+    <div class="__footer">
+      <Footer />
+    </div>
     <!-- Go to top -->
     <button class="_top" id="scrollBtn" @click="goTop">
       <svg
@@ -74,6 +76,7 @@ export default {
       }
       //
       $('[data-toggle="tooltip"]').tooltip({ boundary: "window" });
+      document.getElementById("scrollBtn").style.display = "none";
       //
       window.addEventListener("click", function(event) {
         if (!event.target.matches('[data-toggle="tooltip"]')) {
@@ -106,13 +109,50 @@ export default {
   font-family: ShorelinesScriptBold;
   src: url("../static/ShorelinesScriptBold.otf") format("opentype");
 }
+@font-face {
+  font-family: 'Grand Sage';
+  src: url('../static/gd-sage-bold.woff2') format('woff2')
+}
+@font-face {
+  font-family: 'Grand Sherpa';
+  src: url('../static/gdsherpa-regular.woff2') format('woff2')
+}
+// @font-face {
+//   font-family: 'MyWebFont';
+//   src: url('webfont.eot'); /* IE9 Compat Modes */
+//   src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//        url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+//        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+//        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+//        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+// }
 #app {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Grand Sherpa", "Roboto", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #212121;
   overflow-x: hidden !important;
+  position:relative;
   padding-top: 120px;
+  padding-bottom:70px;
   font-weight:300;
+  min-height:100vh;
+}
+
+.__footer {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.gd-sage {
+  font-family: "Grand Sage", "Roboto", Helvetica, Arial, sans-serif;  
+}
+
+@media screen and (max-width: 767px) {
+  #app {
+    padding-top: 60px;
+  }
 }
 </style>
