@@ -129,7 +129,7 @@
             <ul class="nav nav-pills nav-justified">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link gd-sage active"
                   id="sms-tab"
                   data-toggle="tab"
                   href="#sms"
@@ -140,7 +140,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link gd-sage"
                   id="email-tab"
                   data-toggle="tab"
                   href="#email"
