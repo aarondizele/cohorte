@@ -37,7 +37,37 @@ a {
     justify-content: space-between;
 }
 
-// 
+
+/* ----------------------------- */
+
+.gradient-text {
+    background: #00d301;
+    background: -webkit-linear-gradient(11deg, #00d301, #36c275 50%, #00a562);
+    background: linear-gradient(79deg, #00d301, #36c275 50%, #00a562);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-button {
+    background: #00d301;
+    background: -webkit-linear-gradient(-196deg, #00d301, #36c275 50%, #00a562);
+    background: -webkit-linear-gradient(164deg, #00d301, #36c275 50%, #00a562);
+    background: linear-gradient(286deg, #00d301, #36c275 50%, #00a562);
+    color: white;
+}
+
+.event-divisor:before {
+    content: " ";
+    display: block;
+    border: 2px solid #00a562;
+    width: 60px;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* ----------------------------- */
+
 ._bg-primary {
     background-color: $primary;
 }

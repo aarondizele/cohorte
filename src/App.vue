@@ -141,6 +141,11 @@ export default {
   font-weight: 300;
   min-height: 100vh;
 }
+::selection {
+    background-color: #b3d4fc;
+    color: #000;
+    text-shadow: none;
+}
 
 .__footer {
   position: absolute;

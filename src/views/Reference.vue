@@ -545,6 +545,7 @@
     </div>
     <!-- Tech Crunch -->
     <div class="container py-20">
+      <!-- news -->
       <div class="row">
         <!--  -->
         <div class="col-9">
@@ -559,6 +560,23 @@
           <div>
             <h4 class="font-weight-bold mt-4">The Latest</h4>
             <div>
+              <!-- A la une category -->
+              <article class="post-block">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1 pr-lg-3">
+                    <h5 class="font-weight-bold">Product lessons from building our subscription service Extra Crunch</h5>
+                    <div class="pt-3 pb-5 body-1">
+                    Ebanx, the newly minted Brazilian financial services unicorn, expects to process $2 billion in payments by the end of the year and is looking to expand its offerings into domestic payments as it gr...
+                  </div>
+                    <div class="font-weight-bold text-dark body-2">Jonathan Shieber</div>
+                    <div class="caption" style="color:#777">12:51 am WAT • October 16, 2019</div>
+                  </div>
+                  <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-8 order-1 order-lg-2">
+                    <img alt="" class="img-fluid" src="https://techcrunch.com/wp-content/uploads/2019/10/extra-crunch-roundup10.jpg?w=940&h=500&crop=1">
+                  </div>
+                </div>
+              </article>
+              <!--  -->
               <article class="post-block" v-for="n in 6" :key="n">
                 <div class="row">
                   <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
@@ -583,6 +601,35 @@
             <h6 class="font-weight-bold mb-3">Amazon migrates more than 100 consumer services from Oracle to AWS databases</h6>
             <div class="body-2 text-dark">Greg Kumparak</div>
           </article>
+        </div>
+      </div>
+    </div>
+    <!-- events -->
+    <div class="_belgium">
+      <div class="container">
+        <div class="row _flex _between w-100">
+          <h5 class="font-weight-bold my-0 mr-auto">Where we’ll be next</h5>
+          <div class="_flex">
+            <button class="btn bg-white"><i class="far fa-arrow-left"></i></button>
+            <button class="btn bg-white"><i class="far fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 card-deck" v-for="y in 3" :key="y">
+            <div class="card rounded-0">
+              <div class="card-body px-4">
+                <h3 class="gradient-text font-weight-bold">
+                  <a class="font-weight-bold">TC Hardware Battlefield at TC Shenzhen</a>
+                </h3>
+                <h6 class="font-weight-bold">Nov 9 - 12</h6>
+              </div>
+              <div class="card-footer px-4 bg-transparent border-top-0">
+                <div class="event-divisor"></div>
+                <button class="btn gradient-button btn-block py-5 rounded-0">Learn more</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
