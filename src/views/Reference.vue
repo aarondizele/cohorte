@@ -31,6 +31,64 @@
         </div>
       </div> -->
     </div>
+    <!-- Nos specialites -->
+    <div>
+      <div class="row no-gutters">
+        <div class="col-12 order-2 col-md-5 order-md-1" style="background-color:#EAF4F6">
+          <div class="p-20">
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-4 col-md-6 offset-md-5 text-uppercase gd-sage">
+                <h1><span class="font-weight-bold">Nos</span><br> spécialités</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 order-1 col-md-7 order-md-2 p-5 py-10 p-10-md p-20-lg">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-5" v-for="(category, i) in ['Droit de la famille', 'Droit du travail', 'Droit fiscal', 'Droit pénal', 'Droit immobilier', 'Droit commercial']" :key="i">
+              <div class="row no-gutters">
+                <div class="col-2 d-flex flex-row justify-content-end pr-3">
+                  <div class="_square"></div>
+                </div>
+                <div class="col-10">
+                  <h6 class="text-uppercase mb-3 mt-n1 font-weight-bold">{{category}}</h6>
+                  <p class="body-1">Paragraphe. Cliquez ici pour ajouter votre propre texte.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Belgium -->
+    <div class="container-fluid py-20 _belgium">
+      <div class="row d-flex flex-row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 mb-4 card-deck" v-for="(finance, i) in finances" :key="i">
+            <div class="card text-center rounded-0">
+              <div class="card-body pt-7 body-1">
+                <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt="" width="100">
+                <h5 class="font-weight-bold mt-6 mb-10">{{finance.title}}</h5>
+                {{finance.body}}
+              </div>
+              <div class="card-footer bg-transparent _flex _center border-top-0 pb-5">
+                <button class="btn btn-sm btn-dark rounded-0 text-uppercas caption gd-sage px-5">Lire plus</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Polenord -->
+    <div class="_polenord">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-white" style="background-color:#111111">
+          <h1 class="font-weight-bold mb-3 display-4 text-uppercase">Nouvautés</h1>
+          <h5 class="text-uppercase">Découvrir</h5>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp" alt="" class="_polenord-image">
+        </div>
+      </div>
+    </div>
     <!--  -->
     <div class="container py-15">
       <div class="row no-gutters" style="background-color:#E2F0D5;">
@@ -105,6 +163,18 @@
             </button>
           </div>
         </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="_ourstory">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 _ourstory-overlay _flex">
+          <div class="col-12 col-md-9 offset-md-2 col-lg-8 offset-lg-3 py-20">
+            <h1 class="font-weight-bold text-uppercase mb-3">NOTRE HISTOIRE</h1>
+            <h6>I'm Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices. Relatez ici votre parcours et présentez votre activité à vos visiteurs.</h6>
+          </div>
+        </div>
+        <div class="col-12 col-md-6"></div>
       </div>
     </div>
     <!--  -->
@@ -186,6 +256,30 @@
       </div>
     </div>
 
+    <!-- Exclusive Promotion -->
+    <div class="_promo_exclusive">
+        <div class="container text-center">
+          <h1 class="font-weight-bold text-uppercase mb-3">Promotion exclusive</h1>
+          <h5 class="text-uppercase">Jusqu'à moins 50%</h5>
+          <div class="row mt-8">
+            <div class="col-12 col-md-6 col-lg-4 mb-3" v-for="(product, n) in products" :key="n">
+              <img :src="product.image" alt="" class="img-fluid">
+              <div class="px-5" v-show="productHover">
+                <div class="p-10 _flex _center" style="background-color:#A29C9C;height:">
+                  <h5 class="font-weight-bold">Afficher les détails</h5>
+                </div>
+              </div>
+              <div class="pt-5" v-show="!productHover">
+                <h5 class="text-uppercase font-weight-bold mb-4">{{product.title}}</h5>
+                <div>
+                  <del>${{product.discount}}</del>&nbsp;&nbsp;&nbsp;${{product.price}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <div class="_sectors py-10" style="background-color:#E1E8F2">
       <div class="px-20">
         <h1 class="font-weight-bold mb-5 px-20">Nos prochains événements</h1>
@@ -209,7 +303,7 @@
         </div>
         <!-- Bottom -->
         <div class="pos-absolute pos-bottom-center">
-          <button class="_button-plus _button-plus-lg border-0 py-3">S'inscrire à une activité</button>
+          <button class="_button-plus _button-plus-lg border-0 py-3 gd-sage">S'inscrire à une activité</button>
         </div>
       </div>
     </div>
@@ -449,6 +543,65 @@
         </div>
       </div>
     </div>
+    <!-- Tech Crunch -->
+    <div class="container py-20">
+      <div class="row">
+        <!--  -->
+        <div class="col-9">
+          <!-- A la une -->
+          <div>
+            <h1 class="font-weight-bold">Here’s everything Google just announced at the Made By Google 2019 event</h1>
+            <div class="body-2 font-weight-bold">Greg Kumparak</div>
+            <div class="body-1" style="color:#777">12:51 am WAT • October 16, 2019</div>
+            <img src="https://techcrunch.com/wp-content/uploads/2019/10/EG7ahhFXUAAla7a.jpeg?w=600&h=347&crop=1" alt="" class="img-fluid mt-2 mb-4">
+          </div>
+          <!-- The Latest -->
+          <div>
+            <h4 class="font-weight-bold mt-4">The Latest</h4>
+            <div>
+              <article class="post-block" v-for="n in 6" :key="n">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
+                    <h5 class="font-weight-bold">Brazilian unicorn Ebanx will hit $2 billion in payments processed by the end of the year</h5>
+                    <div class="font-weight-bold text-dark body-2">Jonathan Shieber</div>
+                    <div class="caption" style="color:#777">12:51 am WAT • October 16, 2019</div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-2 body-1">
+                    Ebanx, the newly minted Brazilian financial services unicorn, expects to process $2 billion in payments by the end of the year and is looking to expand its offerings into domestic payments as it gr...
+                  </div>
+                  <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-4 order-1 order-lg-3">
+                    <img alt="" class="img-fluid" src="https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=430&amp;h=230&amp;crop=1" srcset="https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-3">
+          <article class="mini-view__item pb-4" v-for="x in 10" :key="x">
+            <h6 class="font-weight-bold mb-3">Amazon migrates more than 100 consumer services from Oracle to AWS databases</h6>
+            <div class="body-2 text-dark">Greg Kumparak</div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <!-- Promotion -->
+    <div class="container mb-10 mt-20">
+      <div class="_promo1" style="background-color:#FDF5F7;border-radius:3px">
+        <div class="row _flex _center">
+          <div class="col-12 col-md-7 px-20 py-15">
+            <h4 class="font-weight-bold">Live streaming that scales with your application.</h4>
+            <p class="py-3">
+              Support thousands of streams and millions of viewers with our live streaming API that can be set up in minutes.
+            </p>
+          </div>
+          <div class="col-12 col-md-5 p-20">
+            <button class="btn px-6 py-3 font-weight-bold body-2" style="background:#222222;color:white">Learn more about live streaming</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <div class="container">
       <!-- Teams -->
@@ -470,6 +623,9 @@
             <div class="text-center">
               <h5 class="font-weight-bold mb-0">{{team}}</h5>
               <div>Consultant</div>
+              <div class="border-bottom my-3"></div>
+              <div class="body-1">Tél: +243 815517044</div>
+              <div class="body-1">aldizele@gmail.com</div>
             </div>
           </div>
         </div>
@@ -521,7 +677,8 @@
       <div class="container">
         <div class="row n0-gutters">
           <div class="col-12 col-md-6 col-lg-7 p-0">
-            <div class="_cabinet-image"></div>
+            <img src="https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp" alt="" class="_cabinet-image">
+            <!-- <div class="_cabinet-image"></div> -->
             <div class="py-8 w-75">
               <h3 class="font-weight-bold">Le cabinet</h3>
               <div class="_separator-sm"></div>
@@ -669,7 +826,19 @@
 export default {
   name: "home",
   data: () => ({
-    myIndex: 0
+    myIndex: 0,
+    finances: [
+      {title: 'Particuliers', body: `Déclaration d'impôt, Habitation, Famille, Avantages fiscaux, Transport, International`, image: ''},
+      {title: 'Entreprises', body: `Registre UBO, Créer une entreprise, Impôt des sociétés, Personnel et rémunération...`, image: ''},
+      {title: 'ASBL', body: `Registre UBO, Impôts et TVA, Dons, Bénévoles, Clubs sportifs, Grandes ASBL, Economie collaborative...`, image: ''},
+      {title: 'Experts & Partenaires', body: `Registre UBO, Services publics, Banques, Notaires, Avocats, Professions économiques, Secrétariats sociaux et débiteurs de revenus...`, image: ''},
+    ],
+    products: [
+      {title: 'Sac à dos boucles', price: 75.00, discount: 67.50, image: 'https://static.wixstatic.com/media/a9ff3b_f852b0f8d589446d9b672173e24008f9.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_f852b0f8d589446d9b672173e24008f9.webp'},
+      {title: 'Sac à dos teknic', price: 130.00, discount: 104.00, image: 'https://static.wixstatic.com/media/a9ff3b_b0e020a191534969bccc74fb5f27684c.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_b0e020a191534969bccc74fb5f27684c.webp'},
+      {title: 'Sac à dos camo', price: 95.00, discount: 76.00, image: 'https://static.wixstatic.com/media/84770f_7b18884ff3e343208842ae1f30df28aa.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/84770f_7b18884ff3e343208842ae1f30df28aa.webp'},
+    ],
+    productHover: false
   }),
   methods: {
     initMap() {

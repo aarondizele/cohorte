@@ -12,7 +12,7 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Reference
     },
     {
       path: "/about",
@@ -35,12 +35,27 @@ export default new Router({
       component: () => import("./views/Events.vue")
     },
     {
+      path: "/cabemery/accueil",
+      component: () => import("./cabemery/Home.vue")
+    },
+    {
       path: "/multimedia",
       component: () => import("./views/Multimedia.vue")
+    },
+    {
+      path: "/video/:id",
+      component: () => import("./views/Video.vue")
     },
     {
       path: "/actualite",
       component: () => import("./views/News.vue")
     },
-  ]
+    {
+      path: "**",
+      redirect: "/"
+    }
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  }
 });

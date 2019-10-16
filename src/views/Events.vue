@@ -2,7 +2,7 @@
     <!-- Nos prochains evenements -->
     <div class="_sectors py-15" style="background-color:#E1E8F2">
       <div class="px-10 px-20-md">
-        <h1 class="font-weight-bold gd-sage mb-5 px-20-md">Nos prochains événements</h1>
+        <h1 class="font-weight-bold gd-sage mb-5 px-10-md">Nos prochains événements</h1>
       </div>
       <div class="row px-5 px-20-md pt-12 pb-20 _bg-dark pos-relative">
         <div
@@ -23,7 +23,7 @@
         </div>
         <!-- Bottom -->
         <div class="pos-absolute pos-bottom-center _pos-bottom-center">
-          <button class="_button-plus _button-plus-lg border-0 py-3">S'inscrire à une activité</button>
+          <button class="_button-plus _button-plus-lg border-0 py-3 gd-sage">S'inscrire à une activité</button>
         </div>
       </div>
     </div>

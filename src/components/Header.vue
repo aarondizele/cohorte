@@ -1,189 +1,288 @@
 <template>
-  <div class="bg-white">
-    <div class="_flex _between pt-5 px-10">
-      <router-link to="/" class="font-weight-bold gd-sage _flex">
-        COHORTE
-        <!-- <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt="" width="65">
-        <img src="../assets/BankersLogoFondBlanc_modifié.webp" alt=""> -->
-      </router-link>
-      <router-link tag="a" to="/devenez-membre" class="_flex">
-        <button class="_button _button-outline body-2 font-weight-bold">Devenir membre</button>
-        <button class="_button _button-outline body-2 font-weight-bold border-left-0">
-          <svg
-            preserveAspectRatio="xMidYMid meet"
-            data-bbox="42 13.5 116 173"
-            viewBox="42 13.5 116 173"
-            height="20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-            datatype="color"
-            role="img"
-            style="transform: rotate(-90deg);"
-          >
-            <g>
-              <path
-                fill="#212121"
-                d="M147.2 125.1l-40.9 33.8V13.5H90.1v145.4l-38.4-33.8-9.7 12 58.4 49.4 57.6-49.4-10.8-12z"
-                data-color="1"
-              />
-            </g>
-          </svg>
-        </button>
-      </router-link>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-8">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item mr-10-md active">
-            <a class="nav-link" href="#">
-              Accueil
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <!-- <li class="nav-item mr-10-md">
-            <a class="nav-link" href="#">Qui sommes-nous?</a>
-          </li> -->
-          <li class="nav-item mr-10-md dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >Qui sommes-nous</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Idéologie</a></li>
-              <li><a class="dropdown-item" href="#">Statut</a></li>
-              <li><a class="dropdown-item" href="#">Valeur</a></li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">Organisation</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Comité de direction</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Président</a></li>
-                      <li><a class="dropdown-item">Membres du comité</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Comité des sages</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Définition suscinte des rôles membres</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Commissaires aux comptes</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Définition suscinte des rôles membres</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">Histoire</a></li>
-              <li><a class="dropdown-item" href="#">Partenaire</a></li>
-            </ul>
-          </li>
-          <li class="nav-item mr-10-md dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >Membres</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">Domaines</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Publiques</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Régies financières</a></li>
-                      <li><a class="dropdown-item">Ministères</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="#">Privées</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item">Communication</a></li>
-                      <li><a class="dropdown-item">Transports</a></li>
-                      <li><a class="dropdown-item">Construction</a></li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">Industries</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item">Mécanique</a></li>
-                          <li><a class="dropdown-item">Métallurgie</a></li>
-                          <li><a class="dropdown-item">Vestimentaires</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">Finances</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item">Banques</a></li>
-                          <li><a class="dropdown-item">Microfinances</a></li>
-                        </ul>
-                      </li>
-                      <li><a class="dropdown-item">Santé</a></li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">Conseil</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item">Fiscal</a></li>
-                          <li><a class="dropdown-item">Audit</a></li>
-                        </ul>
-                      </li>
-                      <li><a class="dropdown-item">Médias</a></li>
-                      <li><a class="dropdown-item">Musique</a></li>
-                      <li><a class="dropdown-item">Défense</a></li>
-                      <li><a class="dropdown-item">Alimentaire</a></li>
-                      <li><a class="dropdown-item">Energie</a></li>
-                      <li><a class="dropdown-item">Commerce</a></li>
-                      <li><a class="dropdown-item">Télécommunication</a></li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">Informatique</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item">Cyber Café</a></li>
-                          <li><a class="dropdown-item">Fourniture de progiciel</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">Publication des membres</a></li>
-            </ul>
-          </li>
-          <li class="nav-item mr-10-md dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >Actualités</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><router-link to="/actualite" class="dropdown-item" href="#">Economique</router-link></li>
-              <li><router-link to="/actualite" class="dropdown-item" href="#">Social</router-link></li>
-              <li><router-link to="/actualite" class="dropdown-item" href="#">Politique</router-link></li>
-              <li><router-link to="/actualite" class="dropdown-item" href="#">Mondial</router-link></li>
-            </ul>
-          </li>
-          <li class="nav-item mr-10-md">
-            <router-link to="/evenements" class="nav-link">Evénements</router-link>
-          </li>
-          <li class="nav-item mr-10-md">
-            <router-link to="/multimedia" class="nav-link">Multimédia</router-link>
-          </li>
-          <li class="nav-item mr-10-md">
-            <router-link class="nav-link" to="/nous-contacter">Nous contacter</router-link>
-          </li>
-        </ul>
+  <div>
+    <!-- Header -->
+    <div class="bg-white">
+      <div class="_flex _between pt-5 px-5 px-10-md">
+        <div class="_flex">
+          <button name="menu" class="btn bg-transparent header__hamburger mr-3" @click="openNav"></button>
+          <router-link to="/" class="font-weight-bold gd-sage _flex">
+            COHORTE
+            <!-- <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt="" width="65">
+            <img src="../assets/BankersLogoFondBlanc_modifié.webp" alt="">-->
+          </router-link>
+        </div>
+        <router-link tag="a" to="/devenez-membre" class="_flex">
+          <button class="_button _button-outline body-2 font-weight-bold">Devenir membre</button>
+          <button class="_button _button-outline body-2 font-weight-bold border-left-0">
+            <svg
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="42 13.5 116 173"
+              viewBox="42 13.5 116 173"
+              height="20"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+              datatype="color"
+              role="img"
+              style="transform: rotate(-90deg);"
+            >
+              <g>
+                <path
+                  fill="#212121"
+                  d="M147.2 125.1l-40.9 33.8V13.5H90.1v145.4l-38.4-33.8-9.7 12 58.4 49.4 57.6-49.4-10.8-12z"
+                  data-color="1"
+                />
+              </g>
+            </svg>
+          </button>
+        </router-link>
       </div>
-    </nav>
+      <nav class="navbar navbar-expand-xl navbar-light navbar-nav bg-white px-8" id="header-nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mr-5-md mr-10-lg active">
+              <router-link class="nav-link" to="/">
+                Accueil
+                <span class="sr-only">(current)</span>
+              </router-link>
+            </li>
+            <!-- <li class="nav-item mr-5-md mr-10-lg">
+              <a class="nav-link" href="#">Qui sommes-nous?</a>
+            </li>-->
+            <li class="nav-item mr-5-md mr-10-lg dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Qui sommes-nous</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Idéologie</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Statut</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Valeur</a>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Organisation</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Comité de direction</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item">Président</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Membres du comité</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Comité des sages</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item">Définition suscinte des rôles membres</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Commissaires aux comptes</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item">Définition suscinte des rôles membres</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Histoire</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Partenaire</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mr-5-md mr-10-lg dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Membres</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Domaines</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Publiques</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item">Régies financières</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Ministères</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">Privées</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item">Communication</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Transports</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Construction</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">Industries</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item">Mécanique</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item">Métallurgie</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item">Vestimentaires</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">Finances</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item">Banques</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item">Microfinances</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Santé</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">Conseil</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item">Fiscal</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item">Audit</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Médias</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Musique</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Défense</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Alimentaire</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Energie</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Commerce</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Télécommunication</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item dropdown-toggle" href="#">Informatique</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item">Cyber Café</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item">Fourniture de progiciel</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Publication des membres</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mr-5-md mr-10-lg dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Actualités</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <router-link to="/actualite" class="dropdown-item" href="#">Economique</router-link>
+                </li>
+                <li>
+                  <router-link to="/actualite" class="dropdown-item" href="#">Social</router-link>
+                </li>
+                <li>
+                  <router-link to="/actualite" class="dropdown-item" href="#">Politique</router-link>
+                </li>
+                <li>
+                  <router-link to="/actualite" class="dropdown-item" href="#">Mondial</router-link>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mr-5-md mr-10-lg">
+              <router-link to="/evenements" class="nav-link">Evénements</router-link>
+            </li>
+            <li class="nav-item mr-5-md mr-10-lg">
+              <router-link to="/multimedia" class="nav-link">Multimédia</router-link>
+            </li>
+            <li class="nav-item mr-5-md mr-10-lg">
+              <router-link class="nav-link" to="/nous-contacter">Nous contacter</router-link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn c-pointer text-white" @click="closeNav">
+        <div class="hamburger__close"></div>
+      </a>
+      <a href="#">Accueil</a>
+      <a href="#">Qui sommes-nous</a>
+      <a href="#">Membres</a>
+      <a href="#">Actualités</a>
+      <a href="#">Evénements</a>
+      <a href="#">Multimédia</a>
+      <a href="#">Nous contacter</a>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
+  methods: {
+    openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    },
+    closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  },
   mounted() {
     $(".dropdown-menu a.dropdown-toggle").on("click", function(e) {
       if (

@@ -6,6 +6,10 @@ import store from './store'
 require('./styles/main.scss')
 require('./styles/metro.scss')
 
+import Sidenav from '@/components/Sidenav'
+
+Vue.component('Sidenav', Sidenav)
+
 Vue.config.productionTip = false
 
 new Vue({
