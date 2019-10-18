@@ -1,5 +1,35 @@
 <template>
   <div class="home">
+    <!-- CNBC News -->
+    <div class="container-fluid px-10-md py-10">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-8">
+          <div class="_cnbc_hero1 position-relative">
+            <picture class="_cnbc_imgMask"><source srcset="https://image.cnbcfm.com/api/v1/image/105781081-1551990401246gettyimages-1134263810.jpeg?v=1551990422&amp;&amp;w=581&amp;h=436" media="(min-width: 1340px)"><source srcset="https://image.cnbcfm.com/api/v1/image/105781081-1551990401246gettyimages-1134263810.jpeg?v=1551990422&amp;&amp;w=503&amp;h=377" media="(min-width: 1020px)"><source srcset="https://image.cnbcfm.com/api/v1/image/105781081-1551990401246gettyimages-1134263810.jpeg?v=1551990422&amp;&amp;w=516&amp;h=387" media="(min-width: 760px)"><img src="https://image.cnbcfm.com/api/v1/image/105781081-1551990401246gettyimages-1134263810.jpeg?v=1551990422&amp;&amp;w=320&amp;h=180" alt="European Central Bank members voice concern over its negative rate policy" class="HeroLedePlusThreeLeadItem-image"></picture>
+            <div class="_cnbc_content">
+              <h2 class="_cnbc_content_title">
+                <a href="https://www.cnbc.com/2019/10/18/ecb-members-voice-concern-over-its-negative-rate-policy.html" alt="" class="" rel="" target="" title="European Central Bank members voice concern over its negative rate policy" role="" tabindex="" data-type="" aria-label=""><div class="_cnbc_title" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 5;">European Central Bank members voice concern over its negative rate policy</div></a>
+              </h2>
+              <p class="_cnbc_content_description"><span style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3;">Two members of the European Central Bank (ECB) have expressed concern at its current negative rate policy, fearing “unintended consequences.”</span></p></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="_cnbc-separator pb-4" v-for="x in 3" :key="x">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <img src="https://image.cnbcfm.com/api/v1/image/104688382-GettyImages-820176068.jpg?v=1532563768&w=256&h=256" alt="" class="_cnbc_thumbnail">
+              </div>
+              <div class="col-8 pl-3">
+                <h6
+                  class="font-weight-bold mb-2"
+                >Amazon migrates more than 100 consumer services from Oracle to AWS databases</h6>
+                <div class="body-2 text-dark">Greg Kumparak</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <!-- Automatic Slideshow Images -->
     <div>
@@ -11,6 +41,7 @@
         <div class="pos-absolute pos-bottom-center text-white py-20">
           <!-- <h1 class="font-weight-bold">"It's about inspiring and empowering others"</h1> -->
         </div>
+        <div class="gradient-overlay"></div>
       </div>
       <!-- <div class="mySlides pos-relative text-center">
         <img src="https://www.w3schools.com/w3images/ny.jpg" class="_cover" />
@@ -29,23 +60,51 @@
             <b>Thank you, Chicago - A night we won't forget.</b>
           </p>
         </div>
-      </div> -->
+      </div>-->
+    </div>
+    <!--  -->
+    <div class="container-fluid px-4 px-10-md px-15-lg my-10">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 col-lg-8">
+          <img
+            src="https://s3-assets-sowee-prod.s3-eu-west-1.amazonaws.com/s3fs-public/photo-energie.jpg?PRg.kuQVI71BHy3AdHOLyjEglGpngcr5"
+            alt
+            class="_block-image"
+          />
+        </div>
+        <div
+          class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center theme-green"
+        >
+          <article class="text-white text-center py-20 px-10">
+            <h2 class="font-weight-bold mb-5 mb-8-md">Contrats d’énergie</h2>
+            <h5 class="mb-5 mb-8-md">L’élec’ et le gaz sans souci avec Sowee !</h5>
+            <a class="block-btn">Découvrez nos contrats</a>
+          </article>
+        </div>
+      </div>
     </div>
     <!-- Nos specialites -->
     <div>
       <div class="row no-gutters">
-        <div class="col-12 order-2 col-md-5 order-md-1" style="background-color:#EAF4F6">
-          <div class="p-20">
+        <div class="col-12 col-md-5" style="background-color:#EAF4F6">
+          <div class="p-10 p-20-md">
             <div class="row">
               <div class="col-12 col-md-8 offset-md-4 col-md-6 offset-md-5 text-uppercase gd-sage">
-                <h1><span class="font-weight-bold">Nos</span><br> spécialités</h1>
+                <h1>
+                  <span class="font-weight-bold">Nos</span>
+                  <br />spécialités
+                </h1>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 order-1 col-md-7 order-md-2 p-5 py-10 p-10-md p-20-lg">
+        <div class="col-12 col-md-7 px-4 py-10 p-10-md p-20-lg">
           <div class="row">
-            <div class="col-12 col-md-6 mb-5" v-for="(category, i) in ['Droit de la famille', 'Droit du travail', 'Droit fiscal', 'Droit pénal', 'Droit immobilier', 'Droit commercial']" :key="i">
+            <div
+              class="col-12 col-md-6 mb-5"
+              v-for="(category, i) in ['Droit de la famille', 'Droit du travail', 'Droit fiscal', 'Droit pénal', 'Droit immobilier', 'Droit commercial']"
+              :key="i"
+            >
               <div class="row no-gutters">
                 <div class="col-2 d-flex flex-row justify-content-end pr-3">
                   <div class="_square"></div>
@@ -61,39 +120,52 @@
       </div>
     </div>
     <!-- Belgium -->
-    <div class="container-fluid py-20 _belgium">
+    <div class="container-fluid px-4 px-md-0 py-20 _belgium">
       <div class="row d-flex flex-row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-3 mb-4 card-deck" v-for="(finance, i) in finances" :key="i">
-            <div class="card text-center rounded-0">
-              <div class="card-body pt-7 body-1">
-                <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt="" width="100">
-                <h5 class="font-weight-bold mt-6 mb-10">{{finance.title}}</h5>
-                {{finance.body}}
-              </div>
-              <div class="card-footer bg-transparent _flex _center border-top-0 pb-5">
-                <button class="btn btn-sm btn-dark rounded-0 text-uppercas caption gd-sage px-5">Lire plus</button>
-              </div>
+        <div
+          class="col-12 col-md-6 col-lg-3 mb-4 card-deck"
+          v-for="(finance, i) in finances"
+          :key="i"
+        >
+          <div class="card text-center rounded-0">
+            <div class="card-body pt-7 body-1">
+              <img src="../assets/BankersLogoFondBlanc_modifié_item.png" alt width="100" />
+              <h5 class="font-weight-bold mt-6 mb-5 mb-10-md">{{finance.title}}</h5>
+              {{finance.body}}
             </div>
+            <div class="card-footer bg-transparent _flex _center border-top-0 pb-5">
+              <button
+                class="btn btn-sm btn-dark rounded-0 text-uppercas caption gd-sage px-5"
+              >Lire plus</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Polenord -->
-    <div class="_polenord">
+    <div class="container-fluid _polenord">
       <div class="row no-gutters">
-        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-white" style="background-color:#111111">
+        <div
+          class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-white py-10 py-md-0"
+          style="background-color:#111111"
+        >
           <h1 class="font-weight-bold mb-3 display-4 text-uppercase">Nouvautés</h1>
           <h5 class="text-uppercase">Découvrir</h5>
         </div>
         <div class="col-12 col-md-6">
-          <img src="https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp" alt="" class="_polenord-image">
+          <img
+            src="https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp"
+            alt
+            class="_polenord-image"
+          />
         </div>
       </div>
     </div>
     <!--  -->
     <div class="container py-15">
       <div class="row no-gutters" style="background-color:#E2F0D5;">
-        <div class="col-12 col-md-8 col-lg-6 p-20">
-          <h1 class="display-4 font-weight-medium">The Bankers Club</h1> 
+        <div class="col-12 col-md-8 col-lg-6 p-20 order-2 order-md-1">
+          <h1 class="display-4 font-weight-medium">The Bankers Club</h1>
           <p class="py-10">It's about inspiring and empowering others</p>
           <div class="_flex">
             <button class="_button _button-outline body-2 font-weight-bold">En savoir plus</button>
@@ -120,8 +192,12 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-6">
-          <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/71391853_128335575231174_8851014066102075392_o.jpg?_nc_cat=104&_nc_oc=AQnAinIKF2FUYV4nDz6Efk201K8phKe4EJtZ7SyPFmZtWv1hYUQdeKYO6gCP8hHDkPw&_nc_ht=scontent-ams4-1.xx&oh=d11532e931868f21371a97d33dc16c05&oe=5E2A4DCB" class="_cover" alt="">
+        <div class="col-12 col-md-4 col-lg-6 order-1 order-md-2">
+          <img
+            src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/71391853_128335575231174_8851014066102075392_o.jpg?_nc_cat=104&_nc_oc=AQnAinIKF2FUYV4nDz6Efk201K8phKe4EJtZ7SyPFmZtWv1hYUQdeKYO6gCP8hHDkPw&_nc_ht=scontent-ams4-1.xx&oh=d11532e931868f21371a97d33dc16c05&oe=5E2A4DCB"
+            class="_cover"
+            alt
+          />
         </div>
       </div>
     </div>
@@ -132,7 +208,7 @@
           <div class="_header2-box"></div>
           <img src="../assets/track.svg" alt class="_header2-svg" />
         </div>
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-1 py-20">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-1 px-4 px-md-0 py-20">
           <h2 class="font-weight-bold">À propos de nous</h2>
           <div class="_separator-sm _separator-lg"></div>
           <p
@@ -181,7 +257,7 @@
     <div class="_header1">
       <div class="row no-gutters">
         <div class="col-12 col-md-9">
-          <div class="_header1-content pb-20 px-20">
+          <div class="_header1-content px-4 pb-20 px-20-lg px-10-md">
             <div class="row">
               <div class="col-12 col-md-10 col-lg-8">
                 <h1 class="font-weight-bold">The Bankers' Club</h1>
@@ -239,9 +315,15 @@
     </div>
     <!--  -->
     <!-- Sectors -->
-    <div class="_sectors py-20" style="background-color:#E1E8F2">
+    <div class="_sectors py-20" style="background-color:#E8E8E8;color:#2F2C2D">
       <div class="container">
-        <h1 class="font-weight-bold mb-5">Secteurs ciblés</h1>
+        <div class="_flex _between mb-5">
+          <h1 class="font-weight-bold">Secteurs ciblés</h1>
+          <a class="btn btn--black-borders rounded-0 _flex" href="http://blogs.studyinsweden.se/">
+            Go to the student blog
+            <i class="far fa-arrow-right pl-5 headline"></i>
+          </a>
+        </div>
         <div class="row">
           <div
             class="col-12 col-md-6 col-lg-4"
@@ -258,33 +340,34 @@
 
     <!-- Exclusive Promotion -->
     <div class="_promo_exclusive">
-        <div class="container text-center">
-          <h1 class="font-weight-bold text-uppercase mb-3">Promotion exclusive</h1>
-          <h5 class="text-uppercase">Jusqu'à moins 50%</h5>
-          <div class="row mt-8">
-            <div class="col-12 col-md-6 col-lg-4 mb-3" v-for="(product, n) in products" :key="n">
-              <img :src="product.image" alt="" class="img-fluid">
-              <div class="px-5" v-show="productHover">
-                <div class="p-10 _flex _center" style="background-color:#A29C9C;height:">
-                  <h5 class="font-weight-bold">Afficher les détails</h5>
-                </div>
+      <div class="container text-center">
+        <h1 class="font-weight-bold text-uppercase mb-3">Promotion exclusive</h1>
+        <h5 class="text-uppercase">Jusqu'à moins 50%</h5>
+        <div class="row mt-8">
+          <div class="col-12 col-md-6 col-lg-4 mb-3" v-for="(product, n) in products" :key="n">
+            <img :src="product.image" alt class="img-fluid" />
+            <div class="px-5" v-show="productHover">
+              <div class="p-10 _flex _center" style="background-color:#A29C9C;height:">
+                <h5 class="font-weight-bold">Afficher les détails</h5>
               </div>
-              <div class="pt-5" v-show="!productHover">
-                <h5 class="text-uppercase font-weight-bold mb-4">{{product.title}}</h5>
-                <div>
-                  <del>${{product.discount}}</del>&nbsp;&nbsp;&nbsp;${{product.price}}
-                </div>
+            </div>
+            <div class="pt-5" v-show="!productHover">
+              <h5 class="text-uppercase font-weight-bold mb-4">{{product.title}}</h5>
+              <div>
+                <del>${{product.discount}}</del>
+                &nbsp;&nbsp;&nbsp;${{product.price}}
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
 
     <div class="_sectors py-10" style="background-color:#E1E8F2">
-      <div class="px-20">
-        <h1 class="font-weight-bold mb-5 px-20">Nos prochains événements</h1>
+      <div class="px-4 px-10-md px-20-lg">
+        <h1 class="font-weight-bold mb-5 px-20-md">Nos prochains événements</h1>
       </div>
-      <div class="row px-20 pt-12 pb-20 _bg-dark pos-relative">
+      <div class="row px-4 px-10-md px-20-lg pt-12 pb-20 _bg-dark pos-relative">
         <div
           class="col-12 col-md-6 col-lg-3"
           v-for="(sector, i) in ['Banque', 'Assurance', 'Finance', 'Mines']"
@@ -302,8 +385,10 @@
           </div>
         </div>
         <!-- Bottom -->
-        <div class="pos-absolute pos-bottom-center">
-          <button class="_button-plus _button-plus-lg border-0 py-3 gd-sage">S'inscrire à une activité</button>
+        <div class="pos-absolute pos-bottom-center w-100 mx-auto">
+          <button
+            class="_button-plus _button-plus-lg border-0 py-3 gd-sage"
+          >S'inscrire à une activité</button>
         </div>
       </div>
     </div>
@@ -316,13 +401,13 @@
           </div>
         </div>
         <div class="col-12 col-md-9">
-          <div class="_header1-content pb-20 px-20">
+          <div class="_header1-content pb-20 px-4 px-10-md px-20-lg">
             <div class="row">
               <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-3">
                 <h1 class="font-weight-bold">Nos activités</h1>
                 <!--  -->
                 <div class="row _flex _center mt-10">
-                  <div class="col-6 mb-10 _flex">
+                  <div class="col-12 mb-3 mb-md-0 col-md-6 mb-10 _flex">
                     <div class="mr-4">
                       <svg
                         preserveAspectRatio="xMidYMid meet"
@@ -365,7 +450,7 @@
                     </div>
                     <div class>Rencontres/débats</div>
                   </div>
-                  <div class="col-6 mb-10 _flex">
+                  <div class="col-12 mb-3 mb-md-0 col-md-6 mb-10 _flex">
                     <div class="mr-4">
                       <svg
                         preserveAspectRatio="xMidYMid meet"
@@ -390,7 +475,7 @@
                     </div>
                     <div class>Séminaires</div>
                   </div>
-                  <div class="col-6 mb-10 _flex">
+                  <div class="col-12 mb-3 mb-md-0 col-md-6 mb-10 _flex">
                     <div class="mr-4">
                       <svg
                         preserveAspectRatio="xMidYMid meet"
@@ -413,7 +498,7 @@
                     </div>
                     <div class>Conférence</div>
                   </div>
-                  <div class="col-6 mb-10 _flex">
+                  <div class="col-12 mb-3 mb-md-0 col-md-6 mb-10 _flex">
                     <div class="mr-4">
                       <svg
                         preserveAspectRatio="xMidYMid meet"
@@ -481,7 +566,7 @@
                     </div>
                     <div class>Soirée de gala</div>
                   </div>
-                  <div class="col-6 mb-10 _flex">
+                  <div class="col-12 col-md-6 mb-10 _flex">
                     <div class="mr-4">
                       <svg
                         preserveAspectRatio="xMidYMid meet"
@@ -548,13 +633,19 @@
       <!-- news -->
       <div class="row">
         <!--  -->
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <!-- A la une -->
           <div>
-            <h1 class="font-weight-bold">Here’s everything Google just announced at the Made By Google 2019 event</h1>
+            <h1
+              class="font-weight-bold"
+            >Here’s everything Google just announced at the Made By Google 2019 event</h1>
             <div class="body-2 font-weight-bold">Greg Kumparak</div>
             <div class="body-1" style="color:#777">12:51 am WAT • October 16, 2019</div>
-            <img src="https://techcrunch.com/wp-content/uploads/2019/10/EG7ahhFXUAAla7a.jpeg?w=600&h=347&crop=1" alt="" class="img-fluid mt-2 mb-4">
+            <img
+              src="https://techcrunch.com/wp-content/uploads/2019/10/EG7ahhFXUAAla7a.jpeg?w=600&h=347&crop=1"
+              alt
+              class="img-fluid mt-2 mb-4"
+            />
           </div>
           <!-- The Latest -->
           <div>
@@ -564,15 +655,21 @@
               <article class="post-block">
                 <div class="row">
                   <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1 pr-lg-3">
-                    <h5 class="font-weight-bold">Product lessons from building our subscription service Extra Crunch</h5>
-                    <div class="pt-3 pb-5 body-1">
-                    Ebanx, the newly minted Brazilian financial services unicorn, expects to process $2 billion in payments by the end of the year and is looking to expand its offerings into domestic payments as it gr...
-                  </div>
+                    <h5
+                      class="font-weight-bold"
+                    >Product lessons from building our subscription service Extra Crunch</h5>
+                    <div
+                      class="pt-3 pb-5 body-1"
+                    >Ebanx, the newly minted Brazilian financial services unicorn, expects to process $2 billion in payments by the end of the year and is looking to expand its offerings into domestic payments as it gr...</div>
                     <div class="font-weight-bold text-dark body-2">Jonathan Shieber</div>
                     <div class="caption" style="color:#777">12:51 am WAT • October 16, 2019</div>
                   </div>
                   <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-8 order-1 order-lg-2">
-                    <img alt="" class="img-fluid" src="https://techcrunch.com/wp-content/uploads/2019/10/extra-crunch-roundup10.jpg?w=940&h=500&crop=1">
+                    <img
+                      alt
+                      class="img-fluid"
+                      src="https://techcrunch.com/wp-content/uploads/2019/10/extra-crunch-roundup10.jpg?w=940&h=500&crop=1"
+                    />
                   </div>
                 </div>
               </article>
@@ -580,15 +677,22 @@
               <article class="post-block" v-for="n in 6" :key="n">
                 <div class="row">
                   <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1">
-                    <h5 class="font-weight-bold">Brazilian unicorn Ebanx will hit $2 billion in payments processed by the end of the year</h5>
+                    <h5
+                      class="font-weight-bold"
+                    >Brazilian unicorn Ebanx will hit $2 billion in payments processed by the end of the year</h5>
                     <div class="font-weight-bold text-dark body-2">Jonathan Shieber</div>
                     <div class="caption" style="color:#777">12:51 am WAT • October 16, 2019</div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-2 body-1">
-                    Ebanx, the newly minted Brazilian financial services unicorn, expects to process $2 billion in payments by the end of the year and is looking to expand its offerings into domestic payments as it gr...
-                  </div>
+                  <div
+                    class="col-12 col-md-6 col-lg-4 order-3 order-lg-2 body-1"
+                  >Ebanx, the newly minted Brazilian financial services unicorn, expects to process $2 billion in payments by the end of the year and is looking to expand its offerings into domestic payments as it gr...</div>
                   <div class="col-12 col-md-8 offset-md-2 offset-lg-0 col-lg-4 order-1 order-lg-3">
-                    <img alt="" class="img-fluid" src="https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=430&amp;h=230&amp;crop=1" srcset="https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=430&amp;h=230&amp;crop=1 430w">
+                    <img
+                      alt
+                      class="img-fluid"
+                      src="https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=430&amp;h=230&amp;crop=1"
+                      srcset="https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=200&amp;h=107&amp;crop=1 200w, https://techcrunch.com/wp-content/uploads/2019/10/7378104730_f4654718de_h.jpg?w=430&amp;h=230&amp;crop=1 430w"
+                    />
                   </div>
                 </div>
               </article>
@@ -596,9 +700,11 @@
           </div>
         </div>
         <!--  -->
-        <div class="col-3">
+        <div class="col-12 col-md-3">
           <article class="mini-view__item pb-4" v-for="x in 10" :key="x">
-            <h6 class="font-weight-bold mb-3">Amazon migrates more than 100 consumer services from Oracle to AWS databases</h6>
+            <h6
+              class="font-weight-bold mb-3"
+            >Amazon migrates more than 100 consumer services from Oracle to AWS databases</h6>
             <div class="body-2 text-dark">Greg Kumparak</div>
           </article>
         </div>
@@ -607,11 +713,15 @@
     <!-- events -->
     <div class="_belgium">
       <div class="container">
-        <div class="row _flex _between w-100">
+        <div class="row _flex _between w-100 px-3 px-md-0">
           <h5 class="font-weight-bold my-0 mr-auto">Where we’ll be next</h5>
           <div class="_flex">
-            <button class="btn bg-white"><i class="far fa-arrow-left"></i></button>
-            <button class="btn bg-white"><i class="far fa-arrow-right"></i></button>
+            <div class="bg-white ml-3">
+              <i class="far fa-arrow-left"></i>
+            </div>
+            <div class="bg-white ml-3">
+              <i class="far fa-arrow-right"></i>
+            </div>
           </div>
         </div>
         <!--  -->
@@ -637,14 +747,17 @@
     <div class="container mb-10 mt-20">
       <div class="_promo1" style="background-color:#FDF5F7;border-radius:3px">
         <div class="row _flex _center">
-          <div class="col-12 col-md-7 px-20 py-15">
+          <div class="col-12 col-md-7 px-10 pt-10 pb-0 px-20-md py-15-md">
             <h4 class="font-weight-bold">Live streaming that scales with your application.</h4>
-            <p class="py-3">
-              Support thousands of streams and millions of viewers with our live streaming API that can be set up in minutes.
-            </p>
+            <p
+              class="py-3"
+            >Support thousands of streams and millions of viewers with our live streaming API that can be set up in minutes.</p>
           </div>
-          <div class="col-12 col-md-5 p-20">
-            <button class="btn px-6 py-3 font-weight-bold body-2" style="background:#222222;color:white">Learn more about live streaming</button>
+          <div class="col-12 col-md-5 px-10 pt-0 pb-10 p-20-md">
+            <button
+              class="btn px-6 py-3 font-weight-bold body-2"
+              style="background:#222222;color:white"
+            >Learn more about live streaming</button>
           </div>
         </div>
       </div>
@@ -659,7 +772,7 @@
         </div>
         <div class="row">
           <div
-            class="col-12 col-md-6 col-lg-3"
+            class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0"
             v-for="(team, i) in ['Aaron Dizele', 'Adina Dizele', 'Didier Numb', 'Thierry']"
             :key="i"
           >
@@ -668,7 +781,7 @@
               style="background-image:url('https://www.amanimedia.cd/wp-content/uploads/2017/08/df7748a73921b2837e36d05e82956929fb51f162.jpg"
             ></div>
             <div class="text-center">
-              <h5 class="font-weight-bold mb-0">{{team}}</h5>
+              <h6 class="font-weight-bold mb-0">{{team}}</h6>
               <div>Consultant</div>
               <div class="border-bottom my-3"></div>
               <div class="body-1">Tél: +243 815517044</div>
@@ -681,7 +794,7 @@
     <!-- Publications -->
     <div class="_publications py-10" style="background-color:#FCF3BA">
       <div class="container">
-        <div class="_flex _between">
+        <div class="_flex _between flex-wrap">
           <h2 class="font-weight-bold my-5">Nos publications</h2>
           <button class="_button _button-outline body-2 font-weight-bold">Toutes les publications</button>
         </div>
@@ -724,7 +837,11 @@
       <div class="container">
         <div class="row n0-gutters">
           <div class="col-12 col-md-6 col-lg-7 p-0">
-            <img src="https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp" alt="" class="_cabinet-image">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp"
+              alt
+              class="_cabinet-image"
+            />
             <!-- <div class="_cabinet-image"></div> -->
             <div class="py-8 w-75">
               <h3 class="font-weight-bold">Le cabinet</h3>
@@ -784,6 +901,28 @@
             <img src="../assets/track.svg" alt class="_cabinet-right-svg" />
           </div>
         </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="front-contact pos-relative text-white">
+      <div class="front-contact__overlay"></div>
+      <div class="row-spacer"></div>
+      <div class="front-contact__text">
+        <h1 class="front-title mb-3">Contact</h1>
+        <div class="row-spacer row-spacer--medium"></div>
+        <p>
+          We would be happy to answer your questions! Please fill the contact form
+          <a href="en/contact">
+            <b>
+              HERE
+              <span class="before-angle-right-icon"></span>
+            </b>
+          </a>
+        </p>
+        <p>
+          General inquiries about studying in Estonia:
+          <a href="mailto:info@studyestonia.ee">info@studyestonia.ee</a>
+        </p>
       </div>
     </div>
     <!--  -->
@@ -875,15 +1014,49 @@ export default {
   data: () => ({
     myIndex: 0,
     finances: [
-      {title: 'Particuliers', body: `Déclaration d'impôt, Habitation, Famille, Avantages fiscaux, Transport, International`, image: ''},
-      {title: 'Entreprises', body: `Registre UBO, Créer une entreprise, Impôt des sociétés, Personnel et rémunération...`, image: ''},
-      {title: 'ASBL', body: `Registre UBO, Impôts et TVA, Dons, Bénévoles, Clubs sportifs, Grandes ASBL, Economie collaborative...`, image: ''},
-      {title: 'Experts & Partenaires', body: `Registre UBO, Services publics, Banques, Notaires, Avocats, Professions économiques, Secrétariats sociaux et débiteurs de revenus...`, image: ''},
+      {
+        title: "Particuliers",
+        body: `Déclaration d'impôt, Habitation, Famille, Avantages fiscaux, Transport, International`,
+        image: ""
+      },
+      {
+        title: "Entreprises",
+        body: `Registre UBO, Créer une entreprise, Impôt des sociétés, Personnel et rémunération...`,
+        image: ""
+      },
+      {
+        title: "ASBL",
+        body: `Registre UBO, Impôts et TVA, Dons, Bénévoles, Clubs sportifs, Grandes ASBL, Economie collaborative...`,
+        image: ""
+      },
+      {
+        title: "Experts & Partenaires",
+        body: `Registre UBO, Services publics, Banques, Notaires, Avocats, Professions économiques, Secrétariats sociaux et débiteurs de revenus...`,
+        image: ""
+      }
     ],
     products: [
-      {title: 'Sac à dos boucles', price: 75.00, discount: 67.50, image: 'https://static.wixstatic.com/media/a9ff3b_f852b0f8d589446d9b672173e24008f9.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_f852b0f8d589446d9b672173e24008f9.webp'},
-      {title: 'Sac à dos teknic', price: 130.00, discount: 104.00, image: 'https://static.wixstatic.com/media/a9ff3b_b0e020a191534969bccc74fb5f27684c.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_b0e020a191534969bccc74fb5f27684c.webp'},
-      {title: 'Sac à dos camo', price: 95.00, discount: 76.00, image: 'https://static.wixstatic.com/media/84770f_7b18884ff3e343208842ae1f30df28aa.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/84770f_7b18884ff3e343208842ae1f30df28aa.webp'},
+      {
+        title: "Sac à dos boucles",
+        price: 75.0,
+        discount: 67.5,
+        image:
+          "https://static.wixstatic.com/media/a9ff3b_f852b0f8d589446d9b672173e24008f9.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_f852b0f8d589446d9b672173e24008f9.webp"
+      },
+      {
+        title: "Sac à dos teknic",
+        price: 130.0,
+        discount: 104.0,
+        image:
+          "https://static.wixstatic.com/media/a9ff3b_b0e020a191534969bccc74fb5f27684c.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/a9ff3b_b0e020a191534969bccc74fb5f27684c.webp"
+      },
+      {
+        title: "Sac à dos camo",
+        price: 95.0,
+        discount: 76.0,
+        image:
+          "https://static.wixstatic.com/media/84770f_7b18884ff3e343208842ae1f30df28aa.jpg/v1/fill/w_305,h_341,al_c,q_85,usm_0.66_1.00_0.01/84770f_7b18884ff3e343208842ae1f30df28aa.webp"
+      }
     ],
     productHover: false
   }),

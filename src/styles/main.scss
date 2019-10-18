@@ -1,4 +1,178 @@
 $primary: #E85F58;
+._cnbc_hero1 {
+    height: 436px;
+    background: #071d39;
+}
+
+._cnbc_imgMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // width: 65%;
+    height: 100%;
+    padding-top: 0;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 65%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, right top, color-stop(1%, #071d39), color-stop(99%, rgba(7, 29, 57, 0)));
+        background: linear-gradient(90deg, #071d39 1%, rgba(7, 29, 57, 0) 99%);
+    }
+}
+
+._cnbc_content {
+    position: relative;
+    padding: 0 20px 20px;
+    // &:before {
+    //     content: "";
+    //     background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#071d39));
+    //     background: linear-gradient(transparent, #071d39);
+    //     position: absolute;
+    //     top: -70px;
+    //     left: 0;
+    //     height: 70px;
+    //     width: 100%;
+    // }
+}
+
+@media (min-width: 1340px) {
+    ._cnbc_content {
+        padding: 50px 0 56px 40px;
+    }
+}
+
+@media (min-width: 1020px) {
+    ._cnbc_content {
+        padding: 40px 0 35px 50px;
+    }
+}
+
+@media (min-width: 760px) {
+    ._cnbc_content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        padding: 50px 0 50px 58px;
+        background: transparent;
+    }
+}
+
+._cnbc_content_title {
+    margin: 3px 0 12px;
+    min-width: 318px;
+    max-height: 154px;
+    font-size: 24px!important;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+    text-shadow: 0 0 6px #333;
+    overflow-y: hidden;
+}
+
+@media (min-width: 1340px) {
+    ._cnbc_content_title {
+        width: 415px;
+        max-height: 210px;
+        font-size: 40px!important;
+        line-height: 42px;
+        margin: 13px 0 18px;
+    }
+}
+
+@media (min-width: 1020px) {
+    ._cnbc_content_title {
+        max-height: 185px;
+        font-size: 34px!important;
+        line-height: 1.1;
+    }
+}
+
+@media (min-width: 760px) {
+    ._cnbc_content_title {
+        width: 349px;
+        max-height: 180px;
+        line-height: 36px;
+        font-size: 34px!important;
+        margin: 6px 0 26px;
+    }
+}
+
+._cnbc_content_description {
+    min-width: 318px;
+    height: 54px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    overflow-y: hidden;
+}
+
+@media (min-width: 1340px) {
+    ._cnbc_content_description {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1020px) {
+    ._cnbc_content_description {
+        width: 50%;
+    }
+}
+
+@media (min-width: 760px) {
+    ._cnbc_content_description {
+        width: 349px;
+        height: 55px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1340px) {
+    ._cnbc_thumbnail {
+        height: 123px;
+        // width: 123px;
+    }
+}
+
+@media (min-width: 760px) {
+    ._cnbc_thumbnail {
+        // width: 80px;
+        height: 80px;
+    }
+}
+
+._cnbc_thumbnail {
+    height: 126px;
+    width: 100%;
+    object-fit: cover;
+}
+
+._cnbc-separator {
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #ddd;
+    opacity: 1;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -39,6 +213,142 @@ a {
 
 
 /* ----------------------------- */
+
+.front-contact {
+    background-image: url(https://www.studyinestonia.ee/sites/all/themes/studyestonia/static/assets/imgs/mets-suur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+}
+
+.front-contact__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #000096), color-stop(75%, rgba(0, 0, 150, 0.5)), to(transparent));
+    background: -webkit-linear-gradient(left, #000096 50%, rgba(0, 0, 150, 0.5) 75%, transparent 100%);
+    background: -moz-linear-gradient(left, #000096 50%, rgba(0, 0, 150, 0.5) 75%, transparent 100%);
+    background: -o-linear-gradient(left, #000096 50%, rgba(0, 0, 150, 0.5) 75%, transparent 100%);
+    background: linear-gradient(to right, #000096 50%, rgba(0, 0, 150, 0.5) 75%, transparent 100%);
+    z-index: 1;
+}
+
+.front-title {
+    font-family: 'Aino Headline', "Grand Sherpa", "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.front-contact__text {
+    position: relative;
+    margin: 0 2.25rem;
+    z-index: 2;
+}
+
+.before-linkedin-icon:before {
+    font-size: 20px;
+    color: white;
+    font-family: "icons";
+    content: "\f118";
+}
+
+.before-youtube-icon:before {
+    font-size: 20px;
+    color: white;
+    font-family: "icons";
+    content: "\f11f";
+}
+
+.before-twitter-icon:before {
+    font-size: 20px;
+    color: white;
+    font-family: "icons";
+    content: "\f11e";
+}
+
+.before-insta-icon:before {
+    font-size: 20px;
+    color: white;
+    font-family: "icons";
+    content: "\f116";
+}
+
+.before-fb-icon:before {
+    font-size: 20px;
+    color: white;
+    font-family: "icons";
+    content: "\f10f";
+}
+
+
+/* ----------------------------- */
+
+.btn--black-borders {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 25px;
+    text-align: center;
+    color: #2f2c2d;
+    border: 3px solid #2f2c2d;
+    transition: all .2s;
+    &:hover {
+        background-color: #2f2c2d;
+        color: white;
+    }
+}
+
+._block-image {
+    object-position: center;
+    object-fit: cover;
+    height: 520px
+}
+
+.navbar__icon {
+    font-size: 1.9rem;
+    cursor: pointer;
+    // color: #fff;
+    &:before {
+        font-family: "icons";
+        content: "\f11d";
+    }
+}
+
+.block-btn {
+    background-color: white;
+    border-color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    user-select: none;
+    height: 46px;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    border-radius: 46px!important;
+    border: none;
+    color: #00ceaa!important;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#000096), color-stop(50%, rgba(0, 0, 150, 0.1)));
+    background: -webkit-linear-gradient(bottom, #000096, rgba(0, 0, 150, 0.1) 50%);
+    background: -moz-linear-gradient(bottom, #000096, rgba(0, 0, 150, 0.1) 50%);
+    background: -o-linear-gradient(bottom, #000096, rgba(0, 0, 150, 0.1) 50%);
+    background: linear-gradient(to top, #000096, rgba(0, 0, 150, 0.1) 50%);
+}
+
+.theme-green {
+    background-image: linear-gradient(45deg, #00ceaa, #6af248);
+}
 
 .gradient-text {
     background: #00d301;
@@ -136,7 +446,7 @@ a {
 }
 
 .__card-team {
-    height: 360px;
+    height: 320px;
 }
 
 .__card-sector-feature {
@@ -267,14 +577,14 @@ a {
     background-image: url("https://static.wixstatic.com/media/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.jpg/v1/fill/w_749,h_500,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_034d91f380a14c9c8a6ebac84a727ccb~mv2_d_4567_3055_s_4_2.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     background-position: center;
 }
 
 ._ourstory-overlay {
     background-color: rgba($color: black, $alpha: .5);
     color: white;
-    height: 400px;
+    height: 500px;
 }
 
 ._actualite-box {
@@ -715,8 +1025,8 @@ button:focus {
 
 .navbar-light .navbar-nav .active>.nav-link {
     color: $primary;
-    font-weight: 500;
-    font-family: "Grand Sage", "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    // font-family: "Grand Sage", "Roboto", Helvetica, Arial, sans-serif;
 }
 
 // 

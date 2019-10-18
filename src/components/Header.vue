@@ -11,32 +11,35 @@
             <img src="../assets/BankersLogoFondBlanc_modifié.webp" alt="">-->
           </router-link>
         </div>
-        <router-link tag="a" to="/devenez-membre" class="_flex">
-          <button class="_button _button-outline body-2 font-weight-bold">Devenir membre</button>
-          <button class="_button _button-outline body-2 font-weight-bold border-left-0">
-            <svg
-              preserveAspectRatio="xMidYMid meet"
-              data-bbox="42 13.5 116 173"
-              viewBox="42 13.5 116 173"
-              height="20"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-              datatype="color"
-              role="img"
-              style="transform: rotate(-90deg);"
-            >
-              <g>
-                <path
-                  fill="#212121"
-                  d="M147.2 125.1l-40.9 33.8V13.5H90.1v145.4l-38.4-33.8-9.7 12 58.4 49.4 57.6-49.4-10.8-12z"
-                  data-color="1"
-                />
-              </g>
-            </svg>
-          </button>
-        </router-link>
+        <div class="_flex">
+          <div class="mr-3 mr-5-md"><span class="navbar__icon before-search-icon" data-open="search"></span></div>
+          <router-link tag="a" to="/devenez-membre" class="_flex">
+            <button class="_button _button-outline body-2 font-weight-bold">Devenir membre</button>
+            <button class="_button _button-outline body-2 font-weight-bold border-left-0 d-none d-md-block">
+              <svg
+                preserveAspectRatio="xMidYMid meet"
+                data-bbox="42 13.5 116 173"
+                viewBox="42 13.5 116 173"
+                height="20"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+                datatype="color"
+                role="img"
+                style="transform: rotate(-90deg);"
+              >
+                <g>
+                  <path
+                    fill="#212121"
+                    d="M147.2 125.1l-40.9 33.8V13.5H90.1v145.4l-38.4-33.8-9.7 12 58.4 49.4 57.6-49.4-10.8-12z"
+                    data-color="1"
+                  />
+                </g>
+              </svg>
+            </button>
+          </router-link>
+        </div>
       </div>
-      <nav class="navbar navbar-expand-xl navbar-light navbar-nav bg-white px-8" id="header-nav">
+      <nav class="navbar navbar-expand-xl navbar-light navbar-nav bg-white px-8 aino-font" id="header-nav">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item mr-5-md mr-10-lg active">

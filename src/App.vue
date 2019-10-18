@@ -109,6 +109,14 @@ export default {
 <style lang="scss">
 @import url("../static/fontawesome/css/all.css");
 @font-face {
+  font-family: 'icons';
+  src: url("../static/iconFont.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Aino Headline';
+  src: url("../static/Aino-Headline.woff2") format("woff2");
+}
+@font-face {
   font-family: ShorelinesScriptBold;
   src: url("../static/ShorelinesScriptBold.otf") format("opentype");
 }
@@ -145,6 +153,9 @@ export default {
     background-color: #b3d4fc;
     color: #000;
     text-shadow: none;
+}
+.aino-font {
+    font-family: 'Aino Headline', "Grand Sherpa", "Roboto", Helvetica, Arial, sans-serif!important;
 }
 
 .__footer {
